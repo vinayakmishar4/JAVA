@@ -1,0 +1,22 @@
+class Day4
+{
+	public static void main(String[] args) 
+	{
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Press the button");
+		int button=scanner.nextInt();
+        
+       // switch(conditon){}
+       switch(button)
+       {
+       	 case 1:System.out.println("Hello");
+       	 	    break;
+       	 case 2:System.out.println("Namsate");
+       	 	    break;
+         case 3:System.out.println("Bonjuor");
+         	    break;
+         default:System.out.println("Invaild Button");
+       }
+		
+	}
+}
