@@ -1,0 +1,19 @@
+import java.util.*;
+
+class  Day3
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter The Age");
+		int Age=sc.nextInt();
+		if(Age>18)
+		{
+			System.out.println("Your are eilgible " + Age);
+		}
+		else
+	    {
+		   System.out.println("Your are not eilgible " + Age);
+		}
+	}
+}
