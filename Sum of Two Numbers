@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Day2
+{
+	public static void main(String[] args) 
+	{
+	// Variables
+	// data types varaiable names=value
+	Scanner scanner = new Scanner(System.in);
+    // scaneer is used to create object for varaibles
+	//System.in is used to take output from user	
+	
+	int a=scanner.nextInt();
+	int b=scanner.nextInt();
+	int sum=a+b;
+	int diff=b-a;
+	System.out.println("The sum of Two Numbers" + sum);
+	}
+}
