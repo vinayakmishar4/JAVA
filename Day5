@@ -1,0 +1,30 @@
+// loops in  java
+
+// for loops 
+import java.util.*;
+class Day5
+// {
+// 	public static void main(String[] args) 
+// 	{
+// 	   for (int i=0;i<=10;i++) 
+// 	   {
+// 	   	 System.out.print(i + " ");
+// 	   }
+// 	}
+// }
+
+// While loops 
+
+{
+	public static void main(String[] args) 
+	{
+		int i=0;
+		while(i<11)
+		{
+		  i++;
+		  System.out.println(i);
+		}
+	}
+}
+
+
