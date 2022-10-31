@@ -1,0 +1,75 @@
+// WAP to Calculator in java
+
+class Calcutor
+{
+	public static void main(String[] args)
+	{
+		Scanner scanner = new Scanner(System.in);
+		int a;
+		int b;
+		System.out.println("Enter the number one and two");
+         a=scanner.nextInt();
+         b=scanner.nextInt();
+        System.out.println("<-Select The Operation->");
+        System.out.println("1.Additon");
+        System.out.println("2.Multilplaction");
+        System.out.println("3.Subtractition");
+        System.out.println("4.Division");
+        System.out.println("5.Modulus");
+        int i=scanner.nextInt();
+        switch(i)
+        {
+          case 1:int sum=a+b;
+          	     System.out.println("Additon = " + sum);
+          	     break;
+          case 2:int multi=a*b;
+          	     System.out.println("Multilplaction = " + multi);
+          	     break;
+          case 3:int diff=a-b;
+          	     System.out.println("Subtractition = " + diff);
+          	     break;
+          case 4:int divi=a/b;
+           	     System.out.println("Division = " + divi);
+           	     break;
+          case 5:int mod=a%b;
+          	     System.out.println("Modulus = " + mod);
+          	     break;
+        }
+	}
+}class Calcutor
+{
+	public static void main(String[] args)
+	{
+		Scanner scanner = new Scanner(System.in);
+		int a;
+		int b;
+		System.out.println("Enter the number one and two");
+         a=scanner.nextInt();
+         b=scanner.nextInt();
+        System.out.println("<-Select The Operation->");
+        System.out.println("1.Additon");
+        System.out.println("2.Multilplaction");
+        System.out.println("3.Subtractition");
+        System.out.println("4.Division");
+        System.out.println("5.Modulus");
+        int i=scanner.nextInt();
+        switch(i)
+        {
+          case 1:int sum=a+b;
+          	     System.out.println("Additon = " + sum);
+          	     break;
+          case 2:int multi=a*b;
+          	     System.out.println("Multilplaction = " + multi);
+          	     break;
+          case 3:int diff=a-b;
+          	     System.out.println("Subtractition = " + diff);
+          	     break;
+          case 4:int divi=a/b;
+           	     System.out.println("Division = " + divi);
+           	     break;
+          case 5:int mod=a%b;
+          	     System.out.println("Modulus = " + mod);
+          	     break;
+        }
+	}
+}
