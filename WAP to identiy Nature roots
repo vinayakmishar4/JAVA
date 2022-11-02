@@ -1,0 +1,30 @@
+// WAP to identiy Nature roots
+import java.util.*;
+class NatureRoot
+{
+	public static void main(String[] args) 
+	{
+	    Scanner scanner = new Scanner(System.in); 
+		System.out.println("Enter the A");
+		double a=scanner.nextDouble();
+		System.out.println("Ente the B");
+		double b=scanner.nextDouble();
+		System.out.println("Enter the C");
+		double c=scanner.nextDouble();
+
+		double roots=((b*a)-(4*a*c));
+		if (roots<=0)
+		{
+		   System.out.println("Root are real and Unequal = " + roots);
+		}
+		else if (roots==0) 
+		{
+			System.out.println("Root are real and Equal = " + roots);
+		}
+		else
+		{
+			System.out.println("Root are Imginary = " + roots);
+		}
+
+	}
+}
