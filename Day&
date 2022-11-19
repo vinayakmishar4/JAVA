@@ -1,0 +1,50 @@
+import java.util.*;
+class Day7
+{
+	// function
+	// // sum of two numbers using function
+	// public static int Sum(int a,int b)
+	// {
+	// 	// return the value
+	// 	return a + b;
+
+	// }
+	// public static int Multi(int a,int b)
+	// {
+	// 	// return the value
+	// 	return a*b;
+	// }
+	// public static void main(String[] args)
+	// {
+	//   Scanner scanner = new Scanner(System.in);
+ //      int a=scanner.nextInt();
+ //      int b=scanner.nextInt();
+ //      // calling the function
+ //      int c=Sum(a,b);
+ //      int d=Multi(a,b);
+ //      System.out.println("Sum: " + c);
+ //       System.out.println("Multilplaction : " + d);
+	// }
+	public static void main(String[] args) 
+	{
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the Size of Array");
+		int size=scanner.nextInt();
+		// refernce varaible= new data type[size];
+		int numbers[]=new int[size];
+		System.out.println("Enter the number for the Array");
+		for(int i=0;i<size;i++)
+		{
+			numbers[i]=scanner.nextInt();
+		}
+		System.out.println("Array of Numeric: ");
+		int sum=0;
+		for(int i=0;i<numbers.length;i++)
+		{
+			sum +=numbers[i];
+			System.out.println(numbers[i]);
+		}
+		System.out.println("Sum of array is : "+sum);
+	}
+
+}
