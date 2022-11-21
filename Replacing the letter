@@ -1,0 +1,12 @@
+import java.util.*;
+class Replacing
+{
+	public static void main(String[] args) 
+	{
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the Word");
+		String word=scanner.nextLine();
+		String result=word.replace('e','i');
+		System.out.println("The result is = " + result);	
+	}
+}
