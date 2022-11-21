@@ -1,0 +1,43 @@
+import java.util.*;
+class Day9
+{
+	public static void main(String[] args) 
+	{
+		Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter your frist name :-");
+		String fristname=scanner.nextLine();
+		System.out.println("Enter your last name :-");
+	    String lastname=scanner.nextLine();
+	    // concat
+	    String fullname=fristname + " " + lastname;
+		System.out.println("Your name is :- " + fullname);
+		// length of String
+		System.out.println("Length of String :-" + fullname.length());
+		//charAt
+		System.out.println("Elements of String:-");
+		for(int i=0; i<fullname.length(); i++)
+		{
+           System.out.println(fullname.charAt(i));
+		}
+		// String Comparison
+		if (fristname.compareTo(lastname) == 0) 
+		{
+			System.out.println( fristname + " are equal " + lastname);
+		}
+		else if (fristname.compareTo(lastname)>0)
+		{
+			System.out.println(fristname + " is greater than " + lastname);
+		}
+		else if (fristname.compareTo(lastname)<0)
+		{
+			System.out.println(lastname +" is greater than " + fristname);
+		}
+		// substring(beg index,last index)
+		System.out.println("Enter beginning of element of String");
+		int begin =scanner.nextInt();
+		System.out.println("Enter your last of element of String");
+		int end = scanner.nextInt();
+		String name=fullname.substring(begin,end);
+		System.out.println("Sub part of String = " + name);
+	}
+}
