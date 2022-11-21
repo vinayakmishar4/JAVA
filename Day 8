@@ -1,0 +1,32 @@
+import java.util.*;
+class Day8
+{
+  public static void main(String[] args) 
+  {
+     Scanner scanner = new Scanner(System.in);
+     System.out.println("Enter the size1 of Array");
+     int size1 =scanner.nextInt();
+     System.out.println("Enter the size2 of Array");
+     int size2 =scanner.nextInt();
+     // 2D Array
+     // type [][]array name=new type[][];
+     int[][] Number=new int[size1][size2];
+     for(int i=0;i<size1;i++)
+     {
+      for (int j=0;j<size2;j++) 
+      {
+         Number[i][j]=scanner.nextInt();
+      }
+    }
+  //  System.out.println("2D Array = ");
+    for (int i=0;i<size1;i++)
+    {
+      for (int j=0;j<size2;j++)
+      {
+        System.out.print(Number[i][j]+" ");
+      }
+
+      System.out.println();
+    }
+  }  
+}
