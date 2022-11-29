@@ -1,0 +1,26 @@
+import java.util.*;
+class Day10
+{
+	// factorial using recursion
+	static int factorial(int n)
+   	  {
+   	  	if (n==0 || n==1) 
+   	  	{
+   	  		return 1;
+   	  	}
+   	  	else
+   	  	{
+   	  	// fact=n*fact(n-1)
+   	  	return n*factorial(n-1);
+   	    }
+
+   	  }
+   public static void main(String[] args) 
+   {
+   	Scanner scanner = new Scanner(System.in);
+   	System.out.println("Enter the number");
+   	int n = scanner.nextInt();
+   	System.out.println("Factorial of Numbers = " + factorial(n));
+   	  
+   }
+}
