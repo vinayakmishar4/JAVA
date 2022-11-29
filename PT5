@@ -1,0 +1,16 @@
+import java.util.*;
+class PT5
+{
+	// convert C to F
+   // public static float convert(float C)
+   // {
+   // 	 return (C*(9/5)) + 32;
+   // }
+   public static void main(String[] args) 
+   {
+   	Scanner scanner = new Scanner(System.in);
+   	System.out.println("Enter the temperature in Celsius = ");
+   	float C=scanner.nextFloat();
+   	System.out.println("Temperature in F = " + convert(C)); 	
+   }
+}
