@@ -1,0 +1,106 @@
+import java.util.*;
+class PT2
+{
+	public static void main(String[] args) 
+	{
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the Subject One");
+		float a=scanner.nextFloat();
+		System.out.println("Enter the Subject Two");
+		float b=scanner.nextFloat();
+		System.out.println("Enter the Subject Three");
+		float c=scanner.nextFloat();
+         
+        a=(a/100)*100;
+        b=(b/100)*100;
+        c=(c/100)*100;
+		float sum=(a+b+c)/300;
+		sum=sum*100;
+
+		if(sum>=40 && a>=33 && b>=33 && c>=33)
+		{
+			System.out.println("Student is passed");
+		}
+		else
+		{
+			System.out.println("Student is failed");
+		}
+		// clacute tax pay to goverment
+		double tax=0; 
+		System.out.println("Enter the Salary per year");
+		double salary=scanner.nextDouble();
+		if (salary<=250000) 
+		{ 
+            tax=tax+salary*0;
+			System.out.println("Tax per year = " + tax);
+		}
+		else if((salary<=250000) && (salary>=500000))
+		{
+			tax=tax+(salary)*0.005;
+			System.out.println("Tax per year = " + tax);
+		}
+		else if((salary<=500000) && (salary>=1000000))
+		{
+			tax=tax+salary*0.0020;
+			System.out.println("Tax per year = " + tax);
+		}
+		else if((salary<=1000000))
+		{
+			tax=tax+salary*0.0030;
+			System.out.println("Tax per year = " + tax);
+
+		}
+		// day of the week
+		System.out.println("Enter the day");
+		int day=scanner.nextInt();
+		switch(day)
+		{
+		case 1:System.out.println("Monday");
+			   break;
+		case 2:System.out.println("Tuesday");
+			   break;
+		case 3:System.out.println("Wednesday");
+			   break;
+		case 4:System.out.println("Thursday");
+			   break;
+		case 5:System.out.println("friday");
+			   break;
+		case 6:System.out.println("saturday");
+			   break;
+		case 7:System.out.println("sunday");
+			   break;
+		}
+		// leap year or not
+		System.out.println("Enter the year");
+		int year=scanner.nextInt();
+		if(year%4==0)
+		{
+			if (year%100==0) 
+			{
+               if (year%400==0) 
+               {
+               	System.out.println( year + " This year is a leap year ");
+               }
+			}
+		}
+		else
+		{
+			System.out.println(year + " This year is not a leap year ");
+		}
+		// type of url
+		System.out.println("Enter the Url");
+	    String url =scanner.next();
+	    if (url.substring(url.length()-4).equals(".com"))
+	    {
+	    	System.out.println("This URL is commercial website " + url);
+	    }
+	    else if (url.substring(url.length()-4).equals(".org"))
+	    {
+	    	System.out.println("This URL is organization website " + url);
+	    }
+	    else if (url.substring(url.length()-3).equals(".in"))
+	    {
+	    	System.out.println("This is an Indian website " + url);
+	    }
+	}
+}
