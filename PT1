@@ -1,0 +1,23 @@
+import java.util.*;
+class PT1
+{
+	public static void main(String[] args) 
+	{
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the Word");
+		String start =scanner.nextLine();
+		// to uppercase
+		System.out.println("Word in lowercase = " + start.toUpperCase());
+		// repalcing spaces to _
+		String result=start.replace(' ','_');
+		System.out.println("Word after replace = " + result);
+		// repalcing template with String
+		String letter="Dear <|name|>,Thanks a lot";
+		String replace=letter.replace("<|name|>",start);
+		System.out.println("replace String after = " + replace);
+		// detect double and triple 
+		System.out.println("Detect double Spaces = "+start.indexOf("  ")); 
+	    System.out.println("Detect triple spaces = "+start.indexOf("   "));
+
+ }
+}
