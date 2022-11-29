@@ -1,0 +1,26 @@
+import java.util.*;
+class PT4
+{
+   public static void main(String[] args) 
+   {
+   	   // average marks of students in  physics
+       Scanner scanner = new Scanner(System.in);
+       System.out.println("Enter the Number");
+       int size=scanner.nextInt();
+       int[] numbers = new int[size];
+       System.out.println("Enter the Marks  of Students in physics");
+       for(int i = 0; i < size; i++)
+       {
+       	 numbers[i] = scanner.nextInt();
+       }
+       int Average=0;
+       for (int i = 0; i <numbers.length; i++) 
+       {
+            Average=Average+numbers[i];	
+       }
+       System.out.println("Average Marks in physics = " + Average/numbers.length);
+   
+
+
+   }
+}
