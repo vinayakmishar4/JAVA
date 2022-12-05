@@ -1,0 +1,39 @@
+import java.util.*;
+class PT6
+{
+public static void main(String[] args) 
+{
+  Scanner scanner = new Scanner(System.in);
+  Employee employee = new Employee();
+  System.out.println("Enter the Employee of name");
+  // name attributes of Employee
+  employee.Name =scanner.next();
+  System.out.println("Enter the Employee of Salary");
+  // // Salary attributes of Employee
+  employee.Salary =scanner.nextInt();
+  //  calling printdetails method
+  String Name=employee.getName();
+  System.out.println("The Employee of Name = " + Name);
+  int Salary=employee.getSalary();
+  System.out.println("The Employee of Salary = " + Salary);
+
+}
+}
+// Question 1
+class Employee
+{
+	int Salary;
+	String Name;
+	//public void printDetails()
+	//{
+	//System.out.println("The name of the employee = " + Name);
+    //}
+    public int getSalary()
+    {
+    	return Salary;
+    }
+    public String getName()
+    {
+    	return Name;
+    }
+}
