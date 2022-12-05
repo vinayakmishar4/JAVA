@@ -1,0 +1,32 @@
+import java.util.*;
+class PT6
+{
+ public static void main(String[] args) 
+ {
+  Scanner scanner=new Scanner(System.in);
+  System.out.println("Enter the Option For Phone = ");
+  int option=scanner.nextInt();
+  cellphone phone=new cellphone();
+  String Ring=phone.getRing();
+  String Vibrate=phone.getVibrate();
+  switch(option)
+  {
+  case 1:System.out.println(Ring);
+         break;
+  case 2:System.out.println(Vibrate);
+         break;
+  }
+ }
+}
+// Question 2
+class cellphone
+{
+ public String getRing()
+  {
+    return "Phone is Ringing";
+  }
+  public String getVibrate()
+  {
+    return "Phone is Vibrating";
+  }	
+}
