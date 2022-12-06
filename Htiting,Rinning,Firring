@@ -1,0 +1,39 @@
+import java.util.*;
+class PT6
+{
+  public static void main(String[] args) 
+  {
+   Scanner scanner = new Scanner(System.in);
+   Shapes Shape=new Shapes();
+   String Hitting=Shape.getHitting();
+   String Running=Shape.getRunning();
+   String Firring=Shape.getFirring();
+   System.out.println("Enter the option for command");
+   int option=scanner.nextInt();
+   switch(option)
+   {
+   case 1:System.out.println(Hitting);
+          break;
+   case 2:System.out.println(Running);
+          break;
+    case 3:System.out.println(Firring);
+           break;  
+   }
+  }       
+}
+// Question 3
+class Shapes
+{
+  public String getHitting()
+  {
+    return "Man is hitted";
+  } 
+  public String getRunning()
+  {
+    return "Man is running";
+  }
+  public String getFirring()
+  {
+    return "Man is Firring";
+  }
+}
