@@ -1,0 +1,43 @@
+// Day 14 
+class Main {
+  // constructor in inhertance
+  public static void main(String[] args) {
+    // Create a object of class
+    // Base b=new Base();
+    // Derived d=new Derived(1,2);
+    GrandChild g = new GrandChild(4, 5, 6);
+  }
+}
+
+// create class in Base
+class Base {
+  Base() {
+    System.out.println("I am a Base Constructor ");
+  }
+
+  Base(int a) {
+    System.out.println("I am a Base Constructor and value of a = " + a);
+  }
+}
+
+class Derived extends Base {
+  Derived() {
+    System.out.println("I am Derived Constructor");
+  }
+
+  Derived(int a, int b) {
+    super(a);
+    System.out.println("I am Derived Constructor and value of b = " + b);
+  }
+}
+
+class GrandChild extends Derived {
+  GrandChild() {
+    System.out.println("I am GrandChild Constructor");
+  }
+
+  GrandChild(int a, int b, int c) {
+    super(a, b);
+    System.out.println("I am GrandChild Constructor and value of c = " + c);
+  }
+}
