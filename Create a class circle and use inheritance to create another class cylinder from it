@@ -1,0 +1,25 @@
+import java.util.*;
+class PT8_1
+{
+	public static void main(String[] args) 
+	{
+	    Cylinder shape = new Cylinder(2.0,3.0);
+	}
+}
+class Cricle
+{
+	public double radius;
+	Cricle(double radius)
+	{
+		System.out.println("I am in Cricle Constructor = " + radius);
+	}
+}
+class Cylinder extends Cricle
+{
+	public int height;
+	Cylinder(double radius,double height)
+	{
+		super(radius);
+		System.out.println("I am in Cylinder Constructor = " + height);
+	}
+}
