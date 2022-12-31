@@ -1,0 +1,38 @@
+// Dynamic Method in Dispatch in java 
+class Main 
+{
+  public static void main(String[] args) 
+  {
+    // Super object =new Super();
+    Parent p=new Parent();
+    //Sub object=new Sub();
+    Child  c=new Child();
+    // Super object =new Sub();
+    Parent d=new Child();
+    d.name();
+  }
+}
+// Create a  Parent Class
+class Parent
+{ 
+  public void greety()
+  {
+     System.out.println("Good Morning Son ");
+  }
+  public void name()
+  {
+    System.out.println("Hi ! how are you");
+  }
+}
+// Create a Chid Class
+class Child extends Parent
+{
+  public void sawgat()
+  {
+     System.out.println("Good Morning Father");
+  }
+  public void name()
+  {
+    System.out.println("Hi ! I am fine and you");
+  }
+}
