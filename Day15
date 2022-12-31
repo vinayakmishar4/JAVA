@@ -1,0 +1,30 @@
+// Day15 
+// Method Overriding
+class Main 
+{
+  public static void main(String[] args) 
+  {
+    A a=new A();
+    a.meth2();
+    B b=new B();
+    b.meth2();
+  }
+}
+class A
+{
+  public void meth2()
+  {
+    System.out.println("I am method 2 of ClassA");
+  }
+}
+class B extends A
+{
+  public void meth2()
+  {
+    System.out.println("I am method in 2 of Class B");
+  }
+  public void meth3()
+  {
+    System.out.println("I am method in 3 of Class B");
+  }
+}
