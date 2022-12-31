@@ -1,0 +1,44 @@
+import java.util.*;
+class PT8_4
+{
+   public static void main(String[] args)
+   {
+     Cuboid c = new Cuboid(2,3,4);
+     System.out.println("Area of the Cuboid = " + c.Area(2.0,3.0,5.0));
+     System.out.println("Volume of the Cuboid = " + c.Volume(2.0,3.0,5.0)); 	
+   }
+}
+class Rectangle
+{
+	public double length,width;
+	public double getLength()
+	{
+		return length;
+	}
+	public void setlength(double length)
+	{
+		this.length = length;
+	}
+	Rectangle(double width,double length)
+	{
+		System.out.println("I am Rectangle Constructor = " + length);
+		System.out.println("I am Rectangle Constructor =  " + width);
+	}
+}
+class Cuboid extends Rectangle
+{
+	public double height;
+	Cuboid(double height,double width,double length)
+	{
+		super(length,width);
+		System.out.println("I am Cuboid Constructor = " + height);
+	}
+	public double Area(double length,double breadth,double height)
+  {
+  	return 2*(length*breadth+breadth*height+height*length);
+  }
+  public double Volume(double length,double breadth,double height)
+  {
+  	return length*breadth*height;
+  }
+}
