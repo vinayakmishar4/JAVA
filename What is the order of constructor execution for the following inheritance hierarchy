@@ -1,0 +1,30 @@
+class PT8_5
+{
+	public static void main(String[] args) 
+	{
+		Derived c=new Derived2(2,3,4);
+	}
+}
+class Base
+{
+	Base(int x)
+	{
+		System.out.println("I am in Base Constructor and value is " + x);
+	}
+}
+class Derived extends Base
+{
+	Derived(int x,int y)
+	{
+		super(x);
+		System.out.println("I am in Derived Constructor and value is " + y);
+	}
+}
+class Derived2 extends Derived
+{
+	Derived2(int x,int y,int z)
+	{
+		super(x,y);
+		System.out.println("I am in Derived2 Constructor and value is " + z);
+	}
+}
