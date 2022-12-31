@@ -1,0 +1,26 @@
+import java.util.*;
+class PT8_2
+{
+   public static void main(String[] args)
+   {
+     Cuboid c = new Cuboid(2,3,4); 	
+   }
+}
+class Rectangle
+{
+	public double length,width;
+	Rectangle(double width,double length)
+	{
+		System.out.println("I am Rectangle Constructor = " + length);
+		System.out.println("I am Rectangle Constructor =  " + width);
+	}
+}
+class Cuboid extends Rectangle
+{
+	public double height;
+	Cuboid(double height,double width,double length)
+	{
+		super(length,width);
+		System.out.println("I am Cuboid Constructor = " + height);
+	}
+}
