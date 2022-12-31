@@ -1,0 +1,37 @@
+class Day12
+{
+	public static void main(String[] args)
+	{
+      Employee employee = new Employee();
+      System.out.println(employee.getID());
+      System.out.println(employee.getName());		
+	}
+}
+class Employee {
+
+    private int id;
+    private  String name;
+
+    public Employee()
+    {
+    	id=45;
+    	name="Vinayak"
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+    public void setName(String n)
+    {
+        name = n;
+    }
+    public void setId(int i)
+    {
+        id = i;
+    }
+    public int getId()
+    {
+        return id;
+    }
+}
