@@ -1,0 +1,33 @@
+// Day 17 difference btw abstract class and method 
+class Main {
+  public static void main(String[] args) 
+  {
+   Child  c= new Child();
+  }
+}
+abstract class parent 
+{
+  parent ()
+  {
+    System.out.println("I am in Parent Constructor");
+  }
+  public void sayhello()
+  {
+    System.out.println("Good Morning Child Class");
+  }
+  abstract public void greet();
+}
+class Child extends parent
+{
+  public void greet()
+  {
+    System.out.println("Good Morning Parent Class");
+  }
+}
+abstract class Grandchild extends Child 
+{
+  public void  namaste()
+  {
+    System.out.println(" I am Grandchild Constructor");
+  }
+}
