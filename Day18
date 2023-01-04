@@ -1,0 +1,49 @@
+// Day 18 in java
+// interfaces in java 
+class Day18 
+{
+  public static void main(String[] args) 
+  {
+     // we create a object of interfaces 
+     AvonCicyle a=new AvonCicyle();
+     a.Speed();
+     a.wheel();
+     // you can create poperties of inteface but you can't modify the poperties interface
+     System.out.println(a.Bicycle);
+
+  }
+}
+// create a class of interface
+interface Bicycle
+{
+  String Bicycle="Sports cycles";
+  void Brake();
+  void Speed();
+}
+interface Parts
+{
+  void handle();
+  void wheel();
+
+}
+class AvonCicyle implements Bicycle,Parts
+{
+   public void Brake()
+   {
+     System.out.println("The Person has press the brake");
+   }
+   public void Speed()
+   {
+     System.out.println("The Person has moving the Padle Fastly ");
+   }
+   public void wheel()
+   {
+     System.out.println("The Cicyle has wheel");
+   }
+   public void handle()
+   {
+     System.out.println("The Cicyle has handle"); 
+   }
+}
+
+
