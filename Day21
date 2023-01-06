@@ -1,0 +1,70 @@
+// Ploymorphsim in interfaces
+class Day21
+{
+   public static void main(String[] args) 
+   {
+   	  // only camera methods are use in this case
+      Camera camera = new Smartphone();
+      camera.Recording4K();
+      // but if we use other methods of Smartphone it will give error
+      //camera.Connect();--> error Connect method not found 
+      // not allowed
+      Smartphone s=new Smartphone();
+      s.calling(100);
+   }
+}
+interface Camera
+{
+	void takePhoto();
+	void Recording();
+	private void greeting()
+	{
+		System.out.println("Good Moring Person");
+	}
+    default void Recording4K()
+    {
+    	greeting();
+    	System.out.println("The Person is Recording Vedio in 4k Resolution");
+    } 
+}
+interface wifi
+{
+   String[] Network();
+   void Connect(String network);
+}
+class Cellphone
+{
+	void calling(long number)
+	{
+		System.out.println("Calling to the Person = " + number);
+	}
+	void pickup()
+	{
+		System.out.println("Conneting the Call of Person");
+	}
+}
+class Smartphone extends Cellphone implements wifi,Camera
+{
+   public void takePhoto()
+   {
+   	 System.out.println("The Peron is Clicks the Photo");
+   }
+   public void Recording()
+   {
+   	 System.out.println("The Person is Recording the Vedio");	 
+   }
+   // public void Recording4K()
+   // {
+   // 	System.out.println("The Person is Recording the Vedio in 4K format and Also clicks the Photo");
+   // }
+   public String[] Network()
+   {
+   	 System.out.println("List of Network");
+   	 String[] network ={"Vinayak","Smita","Akash"};
+   	 return network;
+   }
+   public void Connect(String network)
+   {
+   	 System.out.println("Connecting to the " + network);
+   }
+}
