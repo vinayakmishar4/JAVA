@@ -1,0 +1,31 @@
+class PT9_3
+{
+	public static void main(String[] args) 
+	{
+		Animal a=new Animal();
+		a.eat();
+		a.Sleep();
+	}
+}
+class Monkey
+{
+	public void Jump()
+	{
+		System.out.println("The Monkey is jumping on land!");
+	}
+	public void Bite()
+	{
+		System.out.println("The Monkey is Take a Bite of Apple!");
+	}
+}
+class Animal extends Monkey
+{
+	public void eat()
+	{
+		System.out.println("The Animal is Eating Apple!");
+	}
+	public void Sleep()
+	{
+		System.out.println("The Animal is Sleeping on the Grass!");
+	}
+}
