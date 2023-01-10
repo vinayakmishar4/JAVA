@@ -1,0 +1,14 @@
+class PT9_1
+{
+   public static void main(String[] args) 
+   {
+      	
+   }
+}
+// create a class Pen 
+abstract class Pen
+{
+	// create abstract methods
+	abstract public void Refill();
+	abstract public void Write();
+}
