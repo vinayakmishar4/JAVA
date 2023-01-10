@@ -1,0 +1,70 @@
+class PT9_4
+{
+  public static void main(String[] args) 
+  {
+  	 // Create the Object of Gallery method
+    Gallery g=new Smartphone();
+    g. Vedios();
+    //g.Snap();
+    //it will give error not allowed
+    Smartphone s=new Smartphone();
+    s.Calling(100);
+  }
+}
+interface Gallery
+{
+	void Photos();
+	void Vedios();
+}
+interface Camera
+{
+	void Snap();
+	void Recording();
+}
+interface phone
+{
+   void lift();
+   void Disconnect();
+}
+class telephone
+{ 
+   void Calling(int number)
+   {
+   	System.out.println("The Person is Calling to this Number = " + number);
+   }
+   void pickup()
+   {
+      System.out.println("The Person is Pick the Call ");
+   }
+}
+class Smartphone extends telephone implements phone,Camera,Gallery
+{
+	public void Gps()
+	{
+	  System.out.println("The Person is on the GPS");
+	}
+   public void Photos()
+   {
+   	System.out.println("The Person is See The Photos in the Smartphone");
+   }
+   public void Vedios()
+   {
+   	System.out.println("The Person is See the Vedios in the Smartphone");
+   }
+   public void Snap()
+   {
+   	System.out.println("The Person is Click the Photo");
+   }
+   public void Recording()
+   {
+   	System.out.println("The Person is Recording the Vedio");
+   }
+   public void lift()
+   {
+   	System.out.println("The Person is lift the telephone");
+   }
+   public void Disconnect()
+   {
+   	System.out.println("The Person is disconnect The Call");
+   }
+}
