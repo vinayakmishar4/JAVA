@@ -1,0 +1,53 @@
+class PT9_5
+{
+	public static void main(String[] args) 
+	{
+         // Create The Method function of Cooking
+       	 Cooking c=new Human();
+       	 c.Cooking();
+       	 // c.fishermen();
+       	 // not allowed
+       	 Human h=new Human();
+       	 h.Sleep();	  
+	}
+}
+interface Cooking
+{
+	void Cooking();
+}
+interface Fishing
+{
+	void fishermen();
+}
+
+
+class Monkey
+{
+	public void Jump()
+	{
+		System.out.println("The Monkey is jumping on land!");
+	}
+	public void Bite()
+	{
+		System.out.println("The Monkey is Take a Bite of Apple!");
+	}
+}
+class Human extends Monkey implements Fishing,Cooking
+{
+	public void eat()
+	{
+		System.out.println("The Human is Eating Apple!");
+	}
+	public void Sleep()
+	{
+		System.out.println("The Human is Sleeping on the Grass!");
+	}
+	public void Cooking()
+	{
+		System.out.println("The Human is Cooking the Food");
+	} 
+	public void fishermen()
+	{
+		System.out.println("The Human is Catching the Fishes");
+	}
+}
