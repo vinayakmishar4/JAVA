@@ -1,0 +1,31 @@
+class PT9_2
+{
+   public static void main(String[] args) 
+   {
+      Founatain f = new Founatain();
+      f.Refill();
+   }
+}
+// create a class Pen 
+abstract class Pen
+{
+	// create abstract methods
+	abstract public void Refill();
+	abstract public void Write();
+}
+class Founatain extends Pen
+{
+	public void Refill()
+	{
+		System.out.println("The Founatain pen has Refill Method");
+	}
+	public void Write()
+	{
+      System.out.println("The Founatain pen has Write Method");
+	}
+	public void ChangeNib()
+	{
+		System.out.println("The Founatain pen has Change The Nib");
+	}
+}
+  
